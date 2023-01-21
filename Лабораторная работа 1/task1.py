@@ -48,12 +48,13 @@ class Wheel:
         Примеры:
         >>> wheel = Wheel(20, 3)
         >>> wheel.comparison_of_protector_thickness(2.5)
+        True
         """
         if not isinstance(minimal_thickness, (int, float)):
             raise TypeError("Значение минимально допустимой толщины должно быть типа int или float")
         if minimal_thickness <= 0:
             raise ValueError("Значение минимально допустимой толщины должно быть положительным числом")
-        ...
+        return self.protector_thickness > minimal_thickness
 
     def conversion_to_inches(self) -> float:
         """
