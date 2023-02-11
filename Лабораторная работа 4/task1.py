@@ -176,3 +176,4 @@ if __name__ == "__main__":
     print(repr(foundation_2))
     print(foundation_1.number_of_floors(7000), foundation_1.volume_of_soil(0.7))
     print(foundation_2.number_of_floors(4600), foundation_2.volume_of_soil(0.9))
+    
